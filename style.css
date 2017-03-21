@@ -1,0 +1,257 @@
+
+/*################################## Nav bar ###############################*/
+
+nav {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin: 0 auto;
+  padding-top: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  /*background: -webkit-linear-gradient(-8deg, #259cb7, #5ca1e7);*/
+}
+nav ul #logo {
+  width: 15%;
+  float: left;
+  position: relative;
+  left: 5%;
+}
+nav ul #logo h1 {
+  width: 57px;
+  border-radius: 4px;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 5px;
+  margin: 0;
+  margin-top: -20px;
+  cursor: pointer;
+  text-shadow: 0 0 2px black;
+ /* transition: color 0.4s;*/
+  zoom: 0;
+}
+#logo h1:hover{
+  color: orange;
+
+}
+nav ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.active{
+  color: red;
+  border-bottom: 4px solid;
+} 
+nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Finger Paint', cursive;
+  font-size: 20px;
+  transition: color 0.4s, zoom 0.4s;
+}
+
+nav #menu-bar {
+  font-size: 38px;
+  color: #fff;
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 5%;
+  width: 40px;
+  padding: 1px;
+  cursor: pointer;
+  text-shadow: 0 0 2px black;
+}
+nav #close-btn {
+  display: none;
+}
+nav .nav-list {
+  float: right;
+  position: relative;
+  right: 10%;
+  width: 60%;
+  margin: 0;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+nav .nav-list li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 15%;
+  text-align: center;
+  min-width: 89px;
+  padding: 3px;
+}
+nav li a {
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+.nav-list li a:hover{
+  color: orange;
+  zoom: 2;
+}
+
+
+/*################################## Home page ##############################*/
+
+@font-face {
+    font-family: aidan;
+    src: url('../fonts/aidan.ttf');
+}
+@font-face {
+    font-family: hello;
+    src: url('../fonts/hello.ttf');
+}
+@font-face {
+    font-family: nelda;
+    src: url('../fonts/nelda.ttf');
+}
+@font-face {
+    font-family: surfing;
+    src:url('https://s3.amazonaws.com/my-web-storage/fonts/surfing.ttf');
+}
+
+body{
+  overflow-x: hidden;
+}
+hr{
+  color: #fff;
+}
+#home-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url('https://s3.amazonaws.com/my-web-storage/images/home2.jpg') no-repeat center center;
+  background-size: cover;
+  align-items: center;
+}
+#intro{
+  color: #eee;
+  font-size: 64px;
+  font-weight: bolder;
+  font-family: aidan;
+  text-align: center;
+}
+#home-page>p{
+  color: #009688;
+  font-size: 18px;
+}
+
+#hello{
+  color: #4CAF50;
+  font-family: 'Roboto', sans-serif;
+  font-size: 72px;
+}
+i.fa.fa-angle-double-down.animated.bounce.infinite{
+  color: #fff;
+  align-self: center;
+  animation-duration: 5s;
+  position: absolute;
+  bottom: 0;
+  font-size: 53px;
+ 
+}
+/*################################## About page #############################*/
+/*################################## Projects Page ##########################*/
+/*################################## Skills page ############################*/
+/*################################## Contact page ###########################*/
+
+
+
+
+
+
+/* ################################## Footer ################################*/
+footer{
+  background-color: #607D8B;
+  color: #fff;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+/*#################################### Media Query ############################*/
+
+/*===================== Nav Bar ======================*/
+
+@media only screen and (max-width: 800px) {
+  nav .nav-list li {
+    display: none;
+    margin: 0 5px;
+    width: 15%;
+    text-align: center;
+    min-width: 89px;
+    padding: 3px;
+  }
+  .active{
+  color: #fff;
+  border-bottom: 0;
+  } 
+  nav i#menu-bar {
+    display: inline-block;
+    margin-top: 13px;
+    transform: color 0.4s;
+  }
+  nav i#menu-bar:hover{
+    color: orange;
+  }
+  nav #close-btn {
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+    font-size: 22px;
+    color: #f8f4f5;
+    cursor: pointer;
+  }
+  nav .overlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4c9daf;
+    text-align: center;
+  }
+  nav .overlay #close-btn{
+    display: inline-block;
+  }
+  nav .overlay li {
+    display: block;
+    color: white;
+    margin: 14vh auto;
+    text-align: center;
+  }
+  nav .overlay li a {
+    cursor: pointer;
+    padding: 20px 60px;
+    font-size: 2vh;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
