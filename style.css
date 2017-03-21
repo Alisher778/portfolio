@@ -34,7 +34,6 @@ nav ul #logo h1 {
 }
 #logo h1:hover{
   color: orange;
-
 }
 nav ul li {
   list-style-type: none;
@@ -49,7 +48,6 @@ nav ul li a {
   cursor: pointer;
   font-family: 'Finger Paint', cursive;
   font-size: 20px;
-  transition: color 0.4s, zoom 0.4s;
 }
 
 nav #menu-bar {
@@ -93,7 +91,7 @@ nav li a {
 }
 .nav-list li a:hover{
   color: orange;
-  zoom: 2;
+  zoom: 1.5;
 }
 
 
