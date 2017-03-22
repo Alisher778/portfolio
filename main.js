@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 //Dropdown menu on click
-  $('#menu-bar').click(function(event){
-    event.preventDefault();
+  $('#menu-bar').click(function(){
+    
     $('.nav-list').addClass('overlay');
     $('.nav-list').slideDown(600); 
   });
@@ -23,6 +23,8 @@ $(document).ready(function(){
       nav.css('backgroundColor', 'transparent');
     }
   })
+
+  
 
   $('nav li a').click(function(){
     
@@ -58,8 +60,8 @@ $(document).ready(function(){
 
   // Media query On .hidden click display project details
 
-  $('.hidden').click(function(){
-    $(this).next().toggle().attr("display", "flex");
-  })
+  // $('.hidden').click(function(){
+  //   $(this).next().show();
+  // })
 
 });

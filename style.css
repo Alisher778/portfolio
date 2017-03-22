@@ -130,6 +130,8 @@ nav ul li a {
   cursor: pointer;
   font-family: 'Finger Paint', cursive;
   font-size: 20px;
+  color: #fff;
+  font-weight: 700;
 }
 
 nav #menu-bar {
@@ -144,10 +146,10 @@ nav #menu-bar {
   cursor: pointer;
   text-shadow: 0 0 2px black;
 }
-nav #close-btn {
+#close-btn {
   display: none;
 }
-nav .nav-list {
+.nav-list {
   float: right;
   position: relative;
   right: 10%;
@@ -158,22 +160,16 @@ nav .nav-list {
   justify-content: center;
   flex-wrap: nowrap;
 }
-nav .nav-list li {
+.nav-list li {
   display: inline-block;
   margin: 0 5px;
-  width: 15%;
   text-align: center;
   min-width: 89px;
   padding: 3px;
-}
-nav li a {
-  color: #fff;
-  font-weight: 700;
-  transition: all 0.4s;
+  cursor: pointer;
 }
 .nav-list li a:hover{
   color: orange;
-  zoom: 1.5;
 }
 
 
@@ -394,7 +390,7 @@ body{
 .hidden{
   display: none;
 }
-#projects .all-projects .project-details {
+.project-details {
   padding: 10px;
   color: black;
   margin-left: 3px;
@@ -582,31 +578,37 @@ footer{
 
 /*===================== Nav Bar ======================*/
 
-@media(max-width: 992px){
+@media only screen and (max-width: 992px){
   #projects .all-projects{
+    flex-direction: column;
     justify-content: center;
   }
+
   #projects .all-projects li{
-    flex: 0 42%;
+    flex: 0 82%;
     margin: 10px;
     position: relative;
-    padding-bottom: 33px;
     margin-left: 40px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
   }
   
-  #projects .all-projects .project-details{
-    display: none;
+  #projects .all-projects li img{
+   width: 48%;
+   height: 48%;
+   align-self: center;
   }
-  .hidden{
-    position: absolute;
-    right: 48%;
-    font-size: 45px;
-    bottom: -2px;
-    display: block;
-    color: #0dd657;
-    font-weight: 900;
-  } 
+
+  #projects .all-projects .project-details{
+    flex: 0 48%;
+  }
+  #projects .all-projects .project-details h3{
+    margin:0;
+  }
+  #projects .all-projects .project-details p{
+    font-size: 17px;
+    margin: 7px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -617,6 +619,9 @@ footer{
     text-align: center;
     min-width: 89px;
     padding: 3px;
+  }
+  .nav-list li a:hover{
+    color: none;
   }
   .active{
   color: #fff;
@@ -679,16 +684,6 @@ footer{
     left: 40%;
   }
     
-
-  .hidden{
-    position: absolute;
-    right: 48%;
-    font-size: 45px;
-    bottom: -2px;
-    display: block;
-    color: #0dd657;
-    font-weight: 900;
-  }
   
 }
 
