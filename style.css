@@ -372,12 +372,13 @@ body{
   justify-content: center;
   min-height: 100vh;
   background: radial-gradient(#51a4ee, #14375a);
-  padding-top: 12vh;
-  margin-top:75px;
+  padding-top: 9vh;
 }
 #projects h1 {
   margin-top: -20px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 #projects .all-projects {
   display: flex;
@@ -399,10 +400,12 @@ body{
 }
 #projects .all-projects .project-details p {
   display: block;
-  font-size: 20px;
+  font-size: 19px;
+  margin-top: 6px;
 }
 #projects .all-projects .project-details h3 {
   text-align: center;
+  margin: 8px;
 }
 #projects .all-projects li {
   flex: 0 29%;
@@ -416,6 +419,7 @@ body{
   border-left: 0;
   background-color: #f0f2f5;
   padding: 15px;
+  padding-bottom: 5px;
 }
 #projects .all-projects li a {
   text-decoration: none;
@@ -458,7 +462,7 @@ body{
   /*background: radial-gradient(#51a4ee, #14375a);*/
   /*background: radial-gradient(#13bc91, #4cc294);*/
   background: radial-gradient(#0d896a, #08945d);
-  margin-top: 140px;
+  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 50px;
 }
@@ -471,7 +475,7 @@ body{
 #skills i.fa {
   align-self: center;
   font-size: 50px;
-  margin-top: 30px;
+  margin-top: 3px;
   color: #4CAF50;
 }
 #skills .skill-set {
@@ -496,7 +500,7 @@ body{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   background-color: #fff;
   border-radius: 5px;
@@ -585,12 +589,13 @@ footer{
   }
 
   #projects .all-projects li{
-    flex: 0 82%;
+    width: 88%;
+    min-width: 713px;
     margin: 10px;
     position: relative;
-    margin-left: 40px;
     display: flex;
     justify-content: space-around;
+    align-self: center;
   }
   
   #projects .all-projects li img{
@@ -673,18 +678,17 @@ footer{
   }
 
   #projects .all-projects li{
-    flex: 0 82%;
+    width: 80%;
     margin: 10px;
     position: relative;
-    padding-bottom: 33px;
+    min-width: 0;
   }
-
-  #projects .all-projects a.view-btn{
-    position: relative;
-    left: 40%;
+  #projects .all-projects .project-details{
+    flex: 0 83%;
   }
-    
-  
+  #projects .all-projects li img{
+   display: none;
+  }
 }
 
 
