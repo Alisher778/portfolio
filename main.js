@@ -56,4 +56,10 @@ $(document).ready(function(){
   });
 
 
+  // Media query On .hidden click display project details
+
+  $('.hidden').click(function(){
+    $(this).next().toggle().attr("display", "flex");
+  })
+
 });

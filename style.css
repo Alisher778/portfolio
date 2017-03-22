@@ -386,9 +386,13 @@ body{
 #projects .all-projects {
   display: flex;
   align-self: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   padding-left: 0;
   justify-content: space-around;
+}
+
+.hidden{
+  display: none;
 }
 #projects .all-projects .project-details {
   padding: 10px;
@@ -405,8 +409,7 @@ body{
   text-align: center;
 }
 #projects .all-projects li {
-  flex: 0 28%;
-  min-width: 350px;
+  flex: 0 29%;
   list-style-type: none;
   align-self: space-around;
   margin: 5px;
@@ -580,14 +583,30 @@ footer{
 /*===================== Nav Bar ======================*/
 
 @media(max-width: 992px){
+  #projects .all-projects{
+    justify-content: center;
+  }
   #projects .all-projects li{
     flex: 0 42%;
     margin: 10px;
+    position: relative;
+    padding-bottom: 33px;
+    margin-left: 40px;
+    justify-content: space-between;
   }
   
   #projects .all-projects .project-details{
     display: none;
   }
+  .hidden{
+    position: absolute;
+    right: 48%;
+    font-size: 45px;
+    bottom: -2px;
+    display: block;
+    color: #0dd657;
+    font-weight: 900;
+  } 
 }
 
 @media only screen and (max-width: 768px) {
@@ -644,15 +663,33 @@ footer{
     font-size: 2vh;
     padding-left: 0;
   }
+  #projects .all-projects{
+    flex-wrap: wrap;
+  }
 
   #projects .all-projects li{
     flex: 0 82%;
     margin: 10px;
+    position: relative;
+    padding-bottom: 33px;
   }
 
-  #projects .all-projects .project-details{
-    display: none;
+  #projects .all-projects a.view-btn{
+    position: relative;
+    left: 40%;
   }
+    
+
+  .hidden{
+    position: absolute;
+    right: 48%;
+    font-size: 45px;
+    bottom: -2px;
+    display: block;
+    color: #0dd657;
+    font-weight: 900;
+  }
+  
 }
 
 
