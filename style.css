@@ -1,3 +1,85 @@
+@keyframes move{
+ 
+  to { stroke-dashoffset: 0px; fill:#000; stroke:#fff; stroke-width: 3px;
+   }
+ }
+
+#a{
+  stroke-dasharray: 873;
+  stroke-dashoffset: 873;
+  animation: move 1s linear forwards;
+
+}
+ #l{
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  animation: move 1s 0.5s linear forwards;
+}
+ #i{
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  animation: move 1s 1s linear forwards;
+}#s{
+  stroke-dasharray: 291;
+  stroke-dashoffset: 291;
+  animation: move 1s 1.5s linear forwards;
+}#h{
+  stroke-dasharray: 558;
+  stroke-dashoffset: 558;
+  animation: move 1s 2s linear forwards;
+}#e{
+  stroke-dasharray: 302;
+  stroke-dashoffset: 302;
+  animation: move 1s 2.5s linear forwards;
+}#r{
+  stroke-dasharray:190;
+  stroke-dashoffset:190;
+  animation: move 1s 3s linear forwards;
+}
+#m{
+  stroke-dasharray:1227;
+  stroke-dashoffset:1228;
+  animation: move 1s 3.5s linear forwards;
+}
+#u{
+  stroke-dasharray:305;
+  stroke-dashoffset:305;
+  animation: move 1s 4s linear forwards;
+}#s2{
+  stroke-dasharray:291;
+  stroke-dashoffset:291;
+  animation: move 1s 4.5s linear forwards;
+}#u2{
+  stroke-dasharray:305;
+  stroke-dashoffset:305;
+  animation: move 1s 5s linear forwards;
+}#r2{
+  stroke-dasharray:190;
+  stroke-dashoffset:190;
+  animation: move 1s 5.5s linear forwards;
+}#m2{
+  stroke-dasharray:499;
+  stroke-dashoffset:499;
+  animation: move 1s 6s linear forwards;
+}#o{
+  stroke-dasharray:341;
+  stroke-dashoffset:341;
+  animation: move 1s 6.5s linear forwards;
+}#n{
+  stroke-dasharray:299;
+  stroke-dashoffset:299;
+  animation: move 1s 7s linear forwards;
+}#o2{
+  stroke-dasharray:341;
+  stroke-dashoffset:341;
+  animation: move 1s 7.5s linear forwards;
+}
+#v{
+  stroke-dasharray:254;
+  stroke-dashoffset:254;
+  animation: move 1s 8s linear forwards;
+}
+
 
 /*################################## Nav bar ###############################*/
 
@@ -130,11 +212,12 @@ hr{
   align-items: center;
 }
 #intro{
-  color: #eee;
+  /*color: #eee;
   font-size: 64px;
   font-weight: bolder;
   font-family: aidan;
-  text-align: center;
+  text-align: center;*/
+  width: 70%;
 }
 #home-page>p{
   color: #009688;
