@@ -39,18 +39,33 @@ $(document).ready(function(){
      let skillsPage = $('#skills').position().top;
      let contactPage = $('#contact').position().top;
 
+
       if(scroll_top+50 > contactPage){
         $('.nav-list a').removeClass('active');
         $('#contactLink').addClass('active');
+        // $('.link').show();
+        $('.link, a:nth-of-type(1)').show().addClass('animated zoomIn');
+        $('.link, a:nth-of-type(2)').show().addClass('animated zoomIn');
+        $('.link, a:nth-of-type(3)').show().addClass('animated zoomIn');
       }else if(scroll_top+50 > skillsPage) {
         $('.nav-list a').removeClass('active');
-        $('#skillsLink').addClass('active')
+        $('#skillsLink').addClass('active');
+        $('.skill-set li').show();
+        $('.skill-set li:nth-of-type(1)').addClass('animated slideInLeft');
+        $('.skill-set li:nth-of-type(2)').addClass('animated slideInRight');
+        $('.skill-set li:nth-of-type(3)').addClass('animated slideInLeft');
       }else if(scroll_top+50 > projectsPage){
         $('.nav-list a').removeClass('active');
-        $('#projectsLink').addClass('active')
-      }else if(scroll_top+50 >  aboutPage){
-         $('.nav-list a').removeClass('active');
-         $('#aboutLink').addClass('active');
+        $('#projectsLink').addClass('active');
+        $('.all-projects li').show();
+        $('.all-projects li:nth-of-type(1)').addClass('animated slideInLeft');
+        $('.all-projects li:nth-of-type(2)').addClass('animated slideInUp');
+        $('.all-projects li:nth-of-type(3)').addClass('animated slideInRight');
+      }else if(scroll_top+200 >  aboutPage){
+        $('.nav-list a').removeClass('active');
+        $('#aboutLink').addClass('active');
+        $('.photo img').show().addClass('animated fadeInLeft');
+        $('.info').css("display", "flex").addClass('animated lightSpeedIn');
       }else{
         $('.nav-list a').removeClass('active');
         $('#homeLink').addClass('active')
