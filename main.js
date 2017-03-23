@@ -40,21 +40,21 @@ $(document).ready(function(){
      let contactPage = $('#contact').position().top;
 
 
-      if(scroll_top+50 > contactPage){
+      if(scroll_top+150 > contactPage){
         $('.nav-list a').removeClass('active');
         $('#contactLink').addClass('active');
         // $('.link').show();
         $('.link, a:nth-of-type(1)').show().addClass('animated zoomIn');
         $('.link, a:nth-of-type(2)').show().addClass('animated zoomIn');
         $('.link, a:nth-of-type(3)').show().addClass('animated zoomIn');
-      }else if(scroll_top+50 > skillsPage) {
+      }else if(scroll_top+150 > skillsPage) {
         $('.nav-list a').removeClass('active');
         $('#skillsLink').addClass('active');
         $('.skill-set li').show();
         $('.skill-set li:nth-of-type(1)').addClass('animated slideInLeft');
         $('.skill-set li:nth-of-type(2)').addClass('animated slideInRight');
         $('.skill-set li:nth-of-type(3)').addClass('animated slideInLeft');
-      }else if(scroll_top+50 > projectsPage){
+      }else if(scroll_top+150 > projectsPage){
         $('.nav-list a').removeClass('active');
         $('#projectsLink').addClass('active');
         $('.all-projects li').show();
