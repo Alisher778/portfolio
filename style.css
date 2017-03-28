@@ -102,9 +102,9 @@ nav ul #logo {
   left: 5%;
 }
 nav ul #logo h1 {
-  width: 57px;
+  width: 48px;
   border-radius: 4px;
-  border: 3px solid #fff;
+  border: 3px solid rgba(39, 222, 104, 0.98);
   color: #fff;
   padding: 5px;
   margin: 0;
@@ -113,6 +113,7 @@ nav ul #logo h1 {
   text-shadow: 0 0 2px black;
  /* transition: color 0.4s;*/
   zoom: 0;
+  font-size: 33px;
 }
 #logo h1:hover{
   color: orange;
@@ -440,11 +441,23 @@ body{
 #projects .all-projects li a.view-btn {
   display: inline-block;
   width: 100px;
-  height: 30px;
+  height: 20px;
   background-color: #0db75a;
   border: 1px solid #108e49;
   text-align: center;
-  padding: 15px 0 2px 0;
+  padding: 6px 0 2px 0;
+  border-radius: 26px;
+  color: #fff;
+  align-self: center;
+}
+#projects .all-projects li a.source-btn {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background-color: #E91E63;
+  border: 1px solid #E91E63;
+  text-align: center;
+  padding: 6px 0 2px 0;
   border-radius: 26px;
   color: #fff;
   align-self: center;
@@ -455,6 +468,10 @@ body{
   border-bottom: 2px solid black;
 }
 
+.button-container{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 /*################################## Skills page ############################*/
@@ -527,7 +544,7 @@ body{
   justify-content: center;
   margin-top: 120px;
 }
-#contact img {
+#overlay img {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -535,7 +552,7 @@ body{
   top: 0;
   z-index: -1;
 }
-#contact img:after {
+#overlay img:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -573,6 +590,12 @@ body{
   font-size: 60px;
 }
 
+#contact .link .fa-id-card-o{
+  padding: 20px;
+  border-radius: 50%;
+  color: #000;
+  font-size: 60px;
+}
 
 
 /* ################################## Footer ################################*/
@@ -582,6 +605,12 @@ footer{
   height: 40px;
   padding-top: 20px;
   text-align: center;
+}
+footer h1{
+  font-size: 1em;
+  margin: 0.67em 0;
+  font-weight: 400;
+  display: inline;
 }
 
 
