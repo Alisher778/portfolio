@@ -15,9 +15,13 @@ $(document).ready(function(){
 
   //On scroll event Change navbar background-color 
   $(window).scroll(function(){
+    let contactPage = $('#contact').position().top;
     let nav = $('nav');
     let scrollPosition = $(window).scrollTop();
-    if(scrollPosition > 80){
+
+    if(scrollPosition > contactPage){
+      nav.css('backgroundColor', 'transparent');
+    }else if(scrollPosition >80){
       nav.css({'backgroundColor':'black', 'height':'55px', 'padding': '20px 0 5px 0'})
     }else{
       nav.css('backgroundColor', 'transparent');
