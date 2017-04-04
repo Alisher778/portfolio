@@ -243,7 +243,6 @@ i.fa.fa-angle-double-down.animated.bounce.infinite{
 body{
   margin: 0;
   box-sizing: border-box;
-  min-width: 500px;
 }
 #about{
   display: flex;
@@ -320,7 +319,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: left;
-  min-width: 415px;
+  width: 70vw;
 }
 
 
@@ -653,6 +652,9 @@ footer h1{
 }
 
 @media only screen and (max-width: 768px) {
+  body{
+    width: 100%;
+  }
   nav .nav-list li {
     display: none;
     margin: 0 5px;
@@ -664,14 +666,23 @@ footer h1{
   .nav-list li a:hover{
     color: none;
   }
+  
+  nav ul #logo{
+    left: -15px;
+  }
+  nav ul #logo h1{
+    width: 38px;
+    font-size: 26px;
+  }
   .active{
   color: #fff;
   border-bottom: 0;
   } 
   nav i#menu-bar {
     display: inline-block;
-    margin-top: 13px;
+    margin-top: 10px;
     transform: color 0.4s;
+    font-size: 26px;
   }
   nav i#menu-bar:hover{
     color: orange;
@@ -713,6 +724,13 @@ footer h1{
     flex-wrap: wrap;
   }
 
+  #text{
+    width: 90vw;
+  }
+
+  #skills h1{
+    font-size: 1em;
+  }
   #projects .all-projects li{
     width: 80%;
     margin: 10px;
@@ -724,6 +742,18 @@ footer h1{
   }
   #projects .all-projects li img{
    display: none;
+  }
+
+  #skills .skill-set li{
+    width: 85%;
+  }
+  #contact .link{
+    margin: 5px 10px;
+  }
+
+  #contact .link .fa{
+    font-size: 25px;
+    padding: 14px 16px;
   }
 }
 

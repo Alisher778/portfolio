@@ -18,7 +18,7 @@ $(document).ready(function(){
     let nav = $('nav');
     let scrollPosition = $(window).scrollTop();
     if(scrollPosition > 80){
-      nav.css({'backgroundColor':'black', 'height':'70px', 'padding': '20px 0 5px 0'})
+      nav.css({'backgroundColor':'black', 'height':'55px', 'padding': '20px 0 5px 0'})
     }else{
       nav.css('backgroundColor', 'transparent');
     }
@@ -40,7 +40,7 @@ $(document).ready(function(){
      let contactPage = $('#contact').position().top;
 
 
-      if(scroll_top+150 > contactPage){
+      if(scroll_top > contactPage){
         $('.nav-list a').removeClass('active');
         $('#contactLink').addClass('active');
         // $('.link').show();
