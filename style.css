@@ -599,10 +599,10 @@ body{
 
 /* ################################## Footer ################################*/
 footer{
-  background-color: #607D8B;
+  background-color: #000;
   color: #fff;
-  height: 40px;
-  padding-top: 20px;
+  height: 20px;
+  padding-top: 7px;
   text-align: center;
 }
 footer h1{
