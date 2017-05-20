@@ -232,6 +232,7 @@ i.fa.fa-angle-double-down.animated.bounce.infinite{
   animation-duration: 5s;
   position: absolute;
   bottom: 0;
+  left: 48%;
   font-size: 53px;
  
 }
@@ -375,6 +376,7 @@ body{
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  height: 100%;
   background: radial-gradient(#51a4ee, #14375a);
   padding-top: 9vh;
 }
@@ -619,14 +621,20 @@ footer h1{
 
 @media only screen and (max-width: 992px){
   #projects .all-projects{
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
+
+    display: block;
+    width: 90%;
+    height: auto;
   }
 
   #projects .all-projects li{
     width: 88%;
+    height: auto;
     min-width: 713px;
-    margin: 10px;
+    margin: 10px auto;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -732,7 +740,7 @@ footer h1{
     font-size: 1em;
   }
   #projects .all-projects li{
-    width: 80%;
+    flex: 0 80%;
     margin: 10px;
     position: relative;
     min-width: 0;
